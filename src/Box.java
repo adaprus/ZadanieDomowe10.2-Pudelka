@@ -1,7 +1,7 @@
 public class Box {
     private double height;
     private String material;
-    public String type;
+    private String type;
 
     public String getType() {
         return type;

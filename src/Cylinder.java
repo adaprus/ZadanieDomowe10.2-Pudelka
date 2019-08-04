@@ -4,7 +4,7 @@ public class Cylinder extends Box {
     public Cylinder(double height, double diameter) {
         super(height);
         this.diameter = diameter;
-        type = "Cylinder";
+        setType("Cylinder");
     }
 
     public double getDiameter() {

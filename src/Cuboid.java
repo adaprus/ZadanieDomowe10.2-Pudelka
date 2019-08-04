@@ -6,7 +6,7 @@ public class Cuboid extends Box {
         super(height);
         this.width = width;
         this.depth = depth;
-        type = "Cuboid";
+        setType("Cuboid");
     }
 
     public double getWidth() {
