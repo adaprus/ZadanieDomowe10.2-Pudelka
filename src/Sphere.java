@@ -11,7 +11,7 @@ public class Sphere extends Product {
     @Override
     public double countVolume() {
         double diameter = getHeight();
-        return ((4 / 3) * Math.PI * Math.pow((diameter / 2), 3));
+        return ((1.0 * 4 / 3) * Math.PI * Math.pow((diameter / 2), 3));
     }
 
     @Override

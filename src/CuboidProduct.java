@@ -42,20 +42,18 @@ public class CuboidProduct extends Product {
                         boxes1[firstEmpty] = boxes[i];
                         System.out.println(boxes[i].toString());
                         firstEmpty++;
-                        break;
-                    } else {
-                        break;
                     }
+                        break;
                 case "Cuboid":
                     if (((Cuboid) boxes[i]).getDepth() >= depth && ((Cuboid) boxes[i]).getWidth() >= width
-                            && boxes[i].getHeight() - getHeight() >= 0) {
+                            && boxes[i].getHeight() - getHeight() >= 0
+                    || ((Cuboid) boxes[i]).getDepth() >= width && ((Cuboid) boxes[i]).getWidth() >= depth
+                            && boxes[i].getHeight() - getHeight() >= 0 ) {
                         boxes1[firstEmpty] = boxes[i];
                         System.out.println(boxes[i].toString());
                         firstEmpty++;
-                        break;
-                    } else {
-                        break;
                     }
+                    break;
             }
         }
         Box[] boxes2 = new Box[firstEmpty];
